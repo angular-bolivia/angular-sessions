@@ -1,3 +1,4 @@
-<p>
-  wall works!
-</p>
+<div>
+  wall:{{ isOn?'prendido':'apagado' }}
+  <app-switch (toggleSwitch) = "toggleSwitch($event)"></app-switch>
+</div>

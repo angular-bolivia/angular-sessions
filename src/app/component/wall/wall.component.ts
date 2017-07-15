@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wall.component.css']
 })
 export class WallComponent implements OnInit {
-
-  constructor() { }
+  isOn:boolean;
+  constructor() {
+    this.isOn = false;
+  }
 
   ngOnInit() {
+  }
+  toggleSwitch(event){
+    this.isOn = event;
+    console.log("wall: -switch Status: ",event);
   }
 
 }
