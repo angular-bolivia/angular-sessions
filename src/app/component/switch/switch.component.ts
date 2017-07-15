@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./switch.component.css']
 })
 export class SwitchComponent implements OnInit {
+  
+  isOn:boolean;
 
-  constructor() { }
+  constructor() {
+    this.isOn = false;
+  }
 
   ngOnInit() {
   }
-
+  toggleSwitch(){
+    this.isOn = !this.isOn;
+  }
 }

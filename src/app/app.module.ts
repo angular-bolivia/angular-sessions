@@ -7,6 +7,7 @@ import { LightBulbComponent } from './component/light-bulb/light-bulb.component'
 import { SwitchComponent } from './component/switch/switch.component';
 import { WallComponent } from './component/wall/wall.component';
 import { CeilingComponent } from './component/ceiling/ceiling.component';
+import { RoomComponent } from './component/room/room.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CeilingComponent } from './component/ceiling/ceiling.component';
     LightBulbComponent,
     SwitchComponent,
     WallComponent,
-    CeilingComponent
+    CeilingComponent,
+    RoomComponent
   ],
   imports: [
     BrowserModule

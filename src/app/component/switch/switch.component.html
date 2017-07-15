@@ -1,3 +1,4 @@
 <p>
-  switch works!
+  Light Switch Status: {{ isOn?'prendido':'apagado' }} 
+  <button (click)="toggleSwitch()" >{{ isOn?'prendido':'apagado' }}</button>
 </p>
