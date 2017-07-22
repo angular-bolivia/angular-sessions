@@ -1,0 +1,8 @@
+p {
+  border: red 5px solid;
+}
+div {
+  border: black 5px solid;
+  width: 700px;
+  margin:  0 auto
+}
