@@ -7,6 +7,7 @@ export class LightSwitchService {
   isOn:BehaviorSubject<boolean>;
   constructor() { 
     this.name = 'SWITCH1';
+    this.isOn = new BehaviorSubject(false);
   }
   setName(newName:string){
     this.name = newName;
