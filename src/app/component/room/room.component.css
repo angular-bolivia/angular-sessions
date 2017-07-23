@@ -3,6 +3,6 @@ p {
 }
 div {
   border: black 5px solid;
-  width: 700px;
-  margin:  0 auto
+  width: calc(100% - 45px);
+  margin: 18px;
 }
