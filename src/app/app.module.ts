@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { PersonComponent } from './component/person/person.component';
@@ -9,6 +11,14 @@ import { WallComponent } from './component/wall/wall.component';
 import { CeilingComponent } from './component/ceiling/ceiling.component';
 import { RoomComponent } from './component/room/room.component';
 import { LightSwitchService } from "app/light-switch.service";
+
+
+
+const appRoutes: Routes = [
+  { path: '', component:  RoomComponent },
+  { path: 'light', component: LightBulbComponent }
+];
+
 
 
 @NgModule({
@@ -22,7 +32,10 @@ import { LightSwitchService } from "app/light-switch.service";
     RoomComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      appRoutes,
+    )
   ],
   providers: [LightSwitchService],
   bootstrap: [AppComponent]
